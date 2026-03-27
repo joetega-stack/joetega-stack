@@ -85,7 +85,7 @@ export default function Projects() {
                 className="p-2 h-30 lg:h-30 w-full text-[10px] bg-gray-300 outline-none rounded-lg text-gray-600 z-10"
               ></textarea>
               <button
-                className={`${on ? "bg-gray-600 hover:shadow-[0_0_5px_1px_black] text-gray-200" : "bg-gray-600 hover:shadow-[0_0_5px_1px_white] text-gray-200"} cursor-pointer text-[15px] rounded-lg flex items-center justify-between p-2 h-10 w-30 z-10`}
+                className={`${on ? "bg-gray-600 hover:shadow-[0_0_5px_1px_black] text-gray-200" : "bg-gray-200 hover:shadow-[0_0_5px_1px_white] text-gray-600"} cursor-pointer text-[15px] rounded-lg flex items-center justify-between p-2 h-10 w-30 z-10`}
               >
                 SUBMIT <MovingArrow />
               </button>
