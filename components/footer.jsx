@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-4 border-t border-t-gray-400">
-        <p>© Allwell 2026. All rights reserved.</p>
+        <p>© Joetega-stack 2026. All rights reserved.</p>
       </div>
     </div>
   );
