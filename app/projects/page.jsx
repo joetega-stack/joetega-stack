@@ -8,6 +8,7 @@ import { SparklesCore } from "@/components/ui/sparkles";
 import { project_items } from "@/constants/items";
 import Image from "next/image";
 
+
 export default function Projects() {
   const [clicked, setClicked] = useState(false);
   const { on } = useContext(AppContext);
@@ -27,7 +28,7 @@ export default function Projects() {
             return (
               <div
                 key={idx}
-                className="group rounded-3xl relative w-full bg-black backdrop-blur-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2"
+                className={`${on? "bg-black/50": "bg-blue-950"} group rounded-3xl relative w-full backdrop-blur-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-lg shadow-gray-200/50`}
               >
                 <div className="w-full p-3">
                   <div className="relative w-full aspect-16/10 overflow-hidden rounded-2xl">
@@ -43,8 +44,8 @@ export default function Projects() {
                   </div>
                 </div>
                 <div className="px-5">
-                  <p className="text-3xl font-bold group-hover:text-gray-400 duration-700">{item.projectName}</p>
-                  <div className="px-3 py-5 *:text-[10px] *:font-bold flex flex-wrap lg:gap-3 gap-0.5 *:bg-gray-900 group-hover:*:bg-gray-800 duration-700 *:p-2 *:flex *:justify-center *:rounded-xl">
+                  <p className="text-3xl font-bold group-hover:text-gray-50 duration-700">{item.projectName}</p>
+                  <div className="px-3 py-5 *:text-[10px] *:font-bold flex flex-wrap lg:gap-3 gap-0.5 *:bg-gray-900 group-hover:*:bg-gray-800 duration-700 group-hover:text-gray-50 *:p-2 *:flex *:justify-center *:rounded-xl">
                     <p>{item.programLanguage.lang1}</p>
                     <p>{item.programLanguage.lang2}</p>
                     <p>{item.programLanguage.lang3}</p>

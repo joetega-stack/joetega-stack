@@ -3,6 +3,8 @@ import React, { useContext, useState } from "react";
 import Link from "next/link";
 import { AppContext } from "@/contexts/appContext";
 import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
+import Logo from "@/components/logo";
+
 
 const Header = () => {
   const { on, mode } = useContext(AppContext);
@@ -16,7 +18,7 @@ const Header = () => {
       >
         <div>
           <Link href="/" className={`transition-colors duration-300`}>
-            Logo
+            <Logo/>
           </Link>
         </div>
         <div

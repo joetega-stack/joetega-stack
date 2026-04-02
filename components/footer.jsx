@@ -32,7 +32,9 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-3 p-3">
           <p className="text-2xl font-bold">Get in touch</p>
-          <a href="rolandjosepharjo@gmail.com">rolandjosepharjo@gmail.com</a>
+          <a href="mailto:rolandjosepharjo@gmail.com?subject=Hello&body=I%20want%20to%20ask%20something">
+            rolandjosepharjo@gmail.com
+          </a>
           <div className="grid grid-cols-3 gap-5 w-40 *:size-8 *:cursor-pointer *:active:scale-98">
             <BsInstagram />
             <FaFacebookSquare />

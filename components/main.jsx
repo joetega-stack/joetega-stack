@@ -46,7 +46,7 @@ const Main = () => {
           </div>
           <div>
             <p className="lg:text-2xl">
-              I'm a FullStack Developer working remotely from Rivers, Nigeria.
+              I'm a FullStack Developer working remotely from Lagos, Nigeria.
             </p>
             <p className="lg:text-2xl">
               Over the past few years, I’ve pushed into different parts of web
@@ -56,11 +56,13 @@ const Main = () => {
             <p className="lg:text-2xl">
               These days, I focus on personal projects, tutorials or school.
             </p>
-            <button
+            <a href="House agreement .pdf">
+              <button
               className={`${on ? "bg-gray-600 hover:shadow-[0_0_5px_1px_black] text-gray-200" : "bg-gray-200 hover:shadow-[0_0_5px_1px_white] text-gray-600"} h-10 p-2 text-[15px] shadow mt-5 font-bold rounded-lg active:scale-99 cursor-pointer flex justify-between items-center`}
             >
               Download CV <MovingArrow />
             </button>
+            </a>
           </div>
         </div>
       </section>
