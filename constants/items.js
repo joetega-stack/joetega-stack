@@ -16,11 +16,9 @@ export const project_items = [
         projectName: "calculator-app",
         url: "https://calculator-app-main-delta-two.vercel.app/",
         programLanguage: {
-            lang1: "JavaScript",
-            lang2: "EXPRESS.JS",
-            lang3: "REACT",
-            lang4: "NODE.JS",
-            lang5: "CSS",
+            lang1: "HTML5",
+            lang2: "CSS3",
+            lang3: "JavaScript",
         }
     },
      {
