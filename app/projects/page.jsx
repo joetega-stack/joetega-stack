@@ -7,6 +7,7 @@ import { AppContext } from "@/contexts/appContext";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { project_items } from "@/constants/items";
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Projects() {
@@ -26,7 +27,7 @@ export default function Projects() {
         <section className="mb-2 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-10 lg:px-30">
           {project_items.map((item, idx) => {
             return (
-              <div
+              <Link href={`${item.url}`}
                 key={idx}
                 className={`${on? "bg-black/50": "bg-blue-950"} group rounded-3xl relative w-full backdrop-blur-2xl overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2 hover:shadow-lg shadow-gray-200/50`}
               >
@@ -49,10 +50,10 @@ export default function Projects() {
                     <p>{item.programLanguage.lang1}</p>
                     <p>{item.programLanguage.lang2}</p>
                     <p>{item.programLanguage.lang3}</p>
-                    <p>{item.programLanguage.lang4}</p>
+                    {item.programLanguage.lang4 ? <p>{item.programLanguage.lang4}</p>:""}
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </section>

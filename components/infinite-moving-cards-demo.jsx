@@ -3,13 +3,14 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function InfiniteMovingCardsDemo() {
   const [[index, direction], setIndex] = useState([0, 0]);
   const [isHovered, setIsHovered] = useState(false);
   const images = [
-    { src: "/dictionary.png" },
-    { src: "/dictionary.png" },
+    { src: "/dictionary.png", url: "https://dictionary-tau-sandy.vercel.app/" },
+    { src: "/calculator-app.png", url: "https://calculator-app-main-delta-two.vercel.app/" },
     { src: "/dictionary.png" },
     { src: "/dictionary.png" },
   ];
@@ -53,13 +54,14 @@ export default function InfiniteMovingCardsDemo() {
           transition={{ duration: 0.6 }}
           className="absolute text-2xl font-bold cursor-grab active:cursor-grabbing"
         >
+          <Link href={`${images[index].url}`}>
           <Image
             src={images[index].src}
             alt="slider image"
             width={1000}
             height={1000}
             className="h-100 w-100"
-          />
+          /></Link>
         </motion.div>
       </AnimatePresence>
     </div>

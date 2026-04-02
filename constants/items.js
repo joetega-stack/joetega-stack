@@ -2,19 +2,21 @@ export const project_items = [
     {
         img: "/dictionary.png",
         projectName: "dictionary",
+        url: "https://dictionary-tau-sandy.vercel.app/",
         programLanguage: {
-            lang1: "JAVASCRIPT",
-            lang2: "EXPRESS.JS",
-            lang3: "REACT",
-            lang4: "NODE.JS",
-            lang5: "CSS",
+            lang1: "REACT",
+            lang2: "Tailwind CSS",
+            lang3: "Next.js",
+            lang4: "JavaScript",
+
         }
     },
     {
-        img: "/dictionary.png",
-        projectName: "dictionary",
+        img: "/calculator-app.png",
+        projectName: "calculator-app",
+        url: "https://calculator-app-main-delta-two.vercel.app/",
         programLanguage: {
-            lang1: "JAVASCRIPT",
+            lang1: "JavaScript",
             lang2: "EXPRESS.JS",
             lang3: "REACT",
             lang4: "NODE.JS",
