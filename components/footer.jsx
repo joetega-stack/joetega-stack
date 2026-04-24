@@ -39,7 +39,9 @@ const Footer = () => {
             <BsInstagram />
             <FaFacebookSquare />
             <FaSquareXTwitter />
-            <FaLinkedin />
+            <a href="https://www.linkedin.com/in/j-stack/">
+              <FaLinkedin />
+            </a>
             <AiFillTikTok />
           </div>
         </div>
