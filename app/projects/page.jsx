@@ -78,18 +78,17 @@ export default function Projects() {
               </div>
               <p className="lg:text-4xl font-bold">GET IN TOUCH</p>
               <div className="grid grid-cols-1 *:text-[10px] gap-2 lg:*:w-full *:w-full lg:*:h-10 *:h-10 *:rounded-lg *:bg-gray-300 *:outline-none *:p-2 *:text-gray-600 z-10">
-                <input type="text" placeholder="FULL NAME" />
-                <input type="text" placeholder="EMAIL ADDRESS" />
-                <input type="text" placeholder="SUBJECT" />
+                <input type="text" placeholder="FULL NAME" required/>
+                <input type="email" placeholder="EMAIL ADDRESS" required/>
               </div>
               <textarea
                 placeholder="WRITE COMMENTS"
                 className="p-2 h-30 lg:h-30 w-full text-[10px] bg-gray-300 outline-none rounded-lg text-gray-600 z-10"
               ></textarea>
               <button
-                className={`${on ? "bg-gray-600 hover:shadow-[0_0_5px_1px_black] text-gray-200" : "bg-gray-200 hover:shadow-[0_0_5px_1px_white] text-gray-600"} cursor-pointer text-[15px] rounded-lg flex items-center justify-between p-2 h-10 w-30 z-10`}
+                className={`${on ? "bg-gray-600 hover:shadow-[0_0_5px_1px_black] text-gray-200" : "bg-gray-200 hover:shadow-[0_0_5px_1px_white] text-gray-600"} cursor-pointer text-[15px] rounded-lg flex items-center gap-1 p-2 font-bold h-10 w-27 z-10`}
               >
-                SUBMIT <MovingArrow />
+                Submit <MovingArrow />
               </button>
             </form>
           ) : (

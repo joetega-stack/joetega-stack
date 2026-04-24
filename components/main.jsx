@@ -56,7 +56,7 @@ const Main = () => {
             <p className="lg:text-2xl">
               These days, I focus on personal projects, tutorials or school.
             </p>
-            <a href="House agreement .pdf">
+            <a href="Joseph Avwunu CV.pdf">
               <button
               className={`${on ? "bg-gray-600 hover:shadow-[0_0_5px_1px_black] text-gray-200" : "bg-gray-200 hover:shadow-[0_0_5px_1px_white] text-gray-600"} h-10 p-2 text-[15px] shadow mt-5 font-bold rounded-lg active:scale-99 cursor-pointer flex justify-between items-center`}
             >
