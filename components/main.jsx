@@ -96,11 +96,11 @@ const Main = () => {
         <div className="flex gap-5 mt-10">
           <button
             onClick={()=> router.push("/projects#contact")}
-            className={`${on?" text-gray-200 hover:bg-blue-800 hover:text-gray-50":"text-gray-200 hover:bg-blue-500 hover:text-gray-900"} text-[15px] bg-blue-600 active:scale-95 transition-colors duration-300 h-13 px-10 flex items-center justify-center rounded-3xl font-bold`}
+            className={`${on?" text-gray-200 hover:bg-blue-800 hover:text-gray-50":"text-gray-200 hover:bg-blue-500 hover:text-gray-900"} lg:text-[15px] md:text-[15px] text-[10px] bg-blue-600 active:scale-95 transition-colors duration-300 h-13 px-10 flex items-center justify-center rounded-3xl font-bold`}
           >
             LET'S CONNECT
           </button>
-          <div className="relative inline-flex rounded-4xl p-[2px] overflow-hidden">
+          <div className="relative inline-flex rounded-4xl p-[2px] overflow-hidden ">
                       <motion.div className="absolute inset-[-100%] bg-[conic-gradient(from_0deg,#3b82f6,#22d3ee,#3b82f6)]"
                         animate={{ rotate: 360 }}
                         transition={{
@@ -110,7 +110,7 @@ const Main = () => {
                       }}/>
           <a href="Joseph Avwunu CV.pdf" className="relative">
             <button
-              className={`${on ? "border-gray-300 " : "border-gray-500"} backdrop-blur-3xl h-13 px-10 border text-[15px] shadow font-bold rounded-4xl active:scale-99 cursor-pointer flex justify-between items-center`}
+              className={`${on ? "border-gray-300 " : "border-gray-500"} text-[10px] backdrop-blur-3xl h-12 lg:px-10 md:px-10 px-5 border lg:text-[15px] md:text-[15px] shadow font-bold rounded-4xl active:scale-99 cursor-pointer flex justify-between items-center`}
             >
               DOWNLOAD CV <MovingArrow />
             </button>
@@ -194,13 +194,13 @@ const Main = () => {
                     <p>{job.ul.list2}</p>
                     <p>{job.ul.list3}</p>
                   </div>
-                  <div className="flex justify-center absolute top-1/2 lg:right-0 lg:translate-x-1/2 ">
+                  <div className="flex justify-center absolute top-1/2 lg:right-0 lg:translate-x-1/2 translate-x-[2px] ">
                     <div className="size-3 rounded-full bg-blue-600" />
                   </div>
                  </div>
               ) : (
                 <div className="relative mb-2 lg:col-start-2 flex items-center lg:pl-12 w-full">
-                  <div className="flex justify-center absolute left-0 lg:-translate-x-1.5">
+                  <div className="flex justify-center absolute left-0 lg:-translate-x-1.5 translate-x-[2px]">
                     <div className="size-3 rounded-full bg-blue-600" />
                   </div>
                   <div className="justify-self-start lg:-translate-x-8 translate-x-4 md:left-8 md:w-[97%] lg:w-[90%] w-[95%] rounded-3xl border-2 border-blue-600 p-8">

@@ -152,7 +152,7 @@ export default function Projects() {
                     30 minutes. No agenda. Tell me about what you're building
                     and let's see if we click
                   </p>
-                  <a  href={`https://wa.me/2348012345678?text=${encodeURIComponent(whatsappMessage)}`}
+                  <a  href={`https://wa.me/2349057777259?text=${encodeURIComponent(whatsappMessage)}`}
                     target="_blank"
                   rel="noopener noreferrer">
                     <button className={`${on ? "border-blue-300" : "border-blue-900 "}  backdrop-blur-lg flex items-center justify-center gap-3 group-hover:border-2 group-hover:border-blue-600 active:scale-95 group-hover:animate-bounce px-5 py-3 rounded-4xl border`}>
