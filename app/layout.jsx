@@ -1,4 +1,4 @@
-import { Google_Sans_Flex, Inter } from "next/font/google";
+import { Google_Sans_Flex, Inter,Great_Vibes } from "next/font/google";
 import "./globals.css";
 import Provider from "@/contexts/appContext";
 import { cn } from "@/lib/utils";
@@ -9,6 +9,8 @@ const googleSans = Google_Sans_Flex({
   variable: "--font-google-sans",
   subsets: ["latin"],
 });
+
+
 
 
 export default function RootLayout({ children }) {

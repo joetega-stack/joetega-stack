@@ -5,18 +5,26 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   color: rgb(66, 65, 65);
   font-family: var(--font-google-sans);
-}
-
-.vertical {
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  transform-origin: center;
+  font-size: 13px;
 }
 
 
+.left{
+  grid-column: 1;
+  justify-self: end;
+  border:solid;
+}
+.right{
+  grid-column: 3;
+  justify-self: start;
+}
 
+
+@media (min-width:768px) {
+  body{
+    cursor: none;
+  }
+}

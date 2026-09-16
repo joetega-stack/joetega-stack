@@ -6,6 +6,8 @@ export const AppContext = createContext({});
 const Provider = ({ children }) => {
   const [on, setOn] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [loading, setLoading] = useState(false)
+
 
   const mode = () => {
     setOn((prev) => {
@@ -28,7 +30,7 @@ const Provider = ({ children }) => {
   }, [mounted]);
 
   return (
-    <AppContext.Provider value={{ mode, on, setOn }}>
+    <AppContext.Provider value={{ mode, on, setOn,loading,setLoading }}>
       {children}
     </AppContext.Provider>
   );
