@@ -110,7 +110,7 @@ const Main = () => {
                       }}/>
           <a href="Joseph Avwunu CV.pdf" className="relative">
             <button
-              className={`${on ? "border-gray-300 " : "border-gray-500"} text-[10px] backdrop-blur-3xl h-12 lg:px-10 md:px-10 px-5 border lg:text-[15px] md:text-[15px] shadow font-bold rounded-4xl active:scale-99 cursor-pointer flex justify-between items-center`}
+              className={`${on ? "border-gray-300 " : "border-gray-500"} text-[10px] backdrop-blur-3xl h-12 lg:px-10 md:px-10 px-4 border lg:text-[15px] md:text-[15px] shadow font-bold rounded-4xl active:scale-99 cursor-pointer flex justify-between items-center`}
             >
               DOWNLOAD CV <MovingArrow />
             </button>
@@ -118,7 +118,7 @@ const Main = () => {
             </div>
         </div>
       </section>
-      <section className="flex p-5 gap-5 mb-5 flex-col lg:flex-row">
+      <section className="flex p-5 gap-5 mb-5 flex-col lg:flex-row lg:mt-30">
         <div className="flex gap-2">
           <p className="text-2xl text-blue-600 font-semibold font-mono">01</p>
           <div className="mt-1">
@@ -156,7 +156,7 @@ const Main = () => {
               key={item.id}
               className="flex gap-5 group border-2 hover:translate-x-5 duration-1000 p-5 border-blue-500 rounded-2xl backdrop-blur"
             >
-              <div className="border-2 border-blue-500 bg-blue-950 backdrop-blur-2xl size-13 rounded-lg flex justify-center items-center text-3xl group-hover:rotate-4 text-blue-600">{item.icon}</div>
+              <div className="border-2 border-blue-500 bg-blue-950 backdrop-blur-2xl lg:size-13 md:size-13 size-10 rounded-lg flex justify-center items-center lg:text-3xl md:text-2xl text-xl group-hover:rotate-4 text-blue-600">{item.icon}</div>
               <div>
                 <p className="font-bold text-blue-500 text-xl font-mono">{item.id}</p>
                 <p className="font-semibold text-xl">{item.h2}</p>
